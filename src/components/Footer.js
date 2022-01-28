@@ -5,6 +5,9 @@ import Ptext from './Ptext';
 
 const FooterStyles = styled.div`
   padding-top: 10rem;
+  -webkit-box-shadow: 0px -5px 10px rgba(50, 50, 50, 0.75);
+  -moz-box-shadow: 0px -5px 10px rgba(50, 50, 50, 0.75);
+  box-shadow: 0px -5px 10px rgba(50, 50, 50, 0.75);
   background-color: var(--deep-dark);
   .container {
     display: flex;
