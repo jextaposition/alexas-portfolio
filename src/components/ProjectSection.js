@@ -5,15 +5,9 @@ import SwiperCore, { Navigation } from 'swiper';
 import projects from '../assets/data/projects';
 import ProjectItem from './ProjectItem';
 import styled from 'styled-components';
-import 'swiper/css/bundle';
+import 'swiper/swiper-bundle.min.css';
 
-new SwiperCore('.swiper', {
-  modules: [Navigation],
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-});
+SwiperCore.use([Navigation]);
 
 const ProjectSectionStyles = styled.div`
   padding: 10rem 0;
@@ -22,7 +16,7 @@ const ProjectSectionStyles = styled.div`
     gap: 3rem;
     margin-top: 5rem;
   }
-  .swiper {
+  .swiper-container {
     padding-top: 8rem;
     max-width: 100%;
   }
