@@ -14,6 +14,9 @@ const ButtonStyle = styled.div`
     border: 2px solid var(--gray-1);
     color: ${(props) => (props.primary ? 'var(--gray-1' : 'black')};
   }
+  .button:hover {
+    transform: rotate(-15deg);
+  }
   @media only screen and (max-width: 768px) {
     .button {
       font-size: 1.8rem;
